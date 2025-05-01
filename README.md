@@ -4,6 +4,11 @@ This is a "Hello World" Python on how to talk to WTI devices with an SSH session
 
 This `SSH script` Python script will work on any modern WTI device, the commands being used are universal on all WTI OOB and PDU type devices making it the perfect starting point to start learning and experimenting with the SSH CLI interface
 
+The prefered way to interact with WTI units is via the API:
+https://www.wti.com/t-wti-restful-api-download.aspx
+
+The API method is a much more robust/future forward way to interact with WTI devices, but as a way to cover all the bases, we have included this sample Python script to interact with the WTI SSH shell.
+
 # To Configure Python Script:
 
 Required: 
