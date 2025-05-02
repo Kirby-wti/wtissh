@@ -125,8 +125,12 @@ def clean_output(text):
 
 # Main
 def main():
-    devices = load_devices('terminal_devices.txt')
-
+    try:
+        devices = load_devices('terminal_devices.txt')
+    except FileNotFoundError:
+        print("File 'terminal_devices.txt' not found. refer to README.")
+        return
+    
     if not devices:
         print("No devices found in terminal_devices.txt")
         return
